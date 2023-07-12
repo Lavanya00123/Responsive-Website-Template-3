@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive template 3</title>
+    <link rel="stylesheet" href="style3.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+
+
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">Start Bootstrap</a></h2>
+
+          <ul class="menu_items">
+            <img src="./F6.JPG" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link" style="color: gray;">About</a></li>
+            <li><a href="#" class="nav_link" style="color: gray;">Contact</a></li>
+            <li><a href="#" class="nav_link" style="color: gray;">Service</a></li>
+          </ul>
+          <img src="./F6.JPG" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Present your business in a<br>whole new way</h2>
+            <p style="color: gray;">Quickly design and customize responsive mobile-first sites with<br>Bootstap, the world's most popular front-end open source toolkit!</p>
+            <div class="buttons">
+              <button class="btn">Get Started</button>
+              <button class="btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero End-->
+    </main>
+
+
+<!-- ------------------------------Footer starts-------------------------------------- -->
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <div class="img">
+            <img src="./F1.JPG" style="height: 50px; width: 80px;">
+          </div>
+          <h2><strong>Featured title</strong></h2>
+          <div class="content">
+            <p>The company was incorporated on May 1, 1995 under the Companies Act, 1956 as Info Edge (India) Private Limited and became a public limited company on April 27, 2006.</p>
+            <div class="social">
+              <a href="#">Call to action-></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="left box">
+          <div class="img">
+            <img src="./F2.JPG" style="height: 50px; width: 80px;">
+          </div>
+          <h2><strong>Featured title</strong></h2>
+          <div class="content">
+            <p>The company was incorporated on May 1, 1995 under the Companies Act, 1956 as Info Edge (India) Private Limited and became a public limited company on April 27, 2006.</p>
+            <div class="social">
+              <a href="#">Call to action-></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="left box">
+          <div class="img">
+            <img src="./F3.JPG" style="height: 50px; width: 80px;">
+          </div>
+          <h2><strong>Featured title</strong></h2>
+          <div class="content">
+            <p>The company was incorporated on May 1, 1995 under the Companies Act, 1956 as Info Edge (India) Private Limited and became a public limited company on April 27, 2006.</p>
+            <div class="social">
+              <a href="#">Call to action-></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- ------------------------footer ends------------------------- -->
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+    
+  </body>
+</html>
